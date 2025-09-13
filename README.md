@@ -5,16 +5,6 @@ O objetivo do projeto é aplicar conceitos de **HTML, CSS e JavaScript**, criand
 
 ---
 
-## 🚀 Funcionalidades
-
-- ✅ **Header fixo** com logo, navegação e botão de chamada para ação (CTA).  
-- ✅ **Menu responsivo** (desktop e mobile com menu hambúrguer).  
-- ✅ **Scroll dinâmico**: mudança do estilo do header ao rolar a página.  
-- ✅ Estrutura organizada em pastas (`index.html`, `src/css`, `src/js`).  
-- ✅ Uso de favicon online.  
-
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5** → estrutura do conteúdo.  
