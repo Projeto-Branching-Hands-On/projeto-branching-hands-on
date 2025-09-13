@@ -2,47 +2,63 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Cursos Online</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <!-- Favicon online -->
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1048/1048949.png" type="image/x-icon">
-
-    <link rel="stylesheet" href="src/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Cursos Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1048/1048949.png" type="image/x-icon">
+  <link rel="stylesheet" href="src/css/styles.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header id="main-header">
-        <nav class="navbar">
-            <div class="logo">Cursos<span>Online</span></div>
+  <!-- Header -->
+  <header id="main-header">
+    <nav class="navbar">
+      <div class="logo">Cursos<span>Online</span></div>
 
-            <!-- Botão Menu Mobile -->
-            <div class="menu-toggle" id="menu-toggle">
-                ☰
-            </div>
+      <!-- Botão Menu Mobile -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
 
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#cursos">Cursos</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
 
-            <a href="#inscricao" class="btn-cta">Inscreva-se</a>
-        </nav>
-    </header>
+      <a href="#inscricao" class="btn-cta">Inscreva-se</a>
+    </nav>
+  </header>
 
-    <main>
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Transforme sua carreira com nossos cursos online!</h1>
+        <p>Aprenda com especialistas e conquiste novas oportunidades. Estude no seu ritmo, com conteúdos de qualidade e certificados reconhecidos.</p>
+        <a href="#inscricao" class="btn-hero">Quero me inscrever</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://img.freepik.com/free-vector/online-learning-concept_23-2148508946.jpg" alt="Cursos Online">
+      </div>
+    </section>
 
-    </main>
+    <!-- Seção de Inscrição -->
+    <section id="inscricao" class="inscricao">
+      <h2>Inscreva-se Agora</h2>
+      <form>
+        <input type="text" placeholder="Nome completo" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 
-    <script src="src/js/index.js"></script>
+  <script src="src/js/index.js"></script>
 </body>
 
 </html>
