@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos Online</title>
+  <link rel="stylesheet" href="src/css/sobre.css"> 
+</head>
+<body>
+  <header id="main-header">
+    <nav class="navbar">
+      <div class="logo">Cursos<span>Online</span></div>
+
+      <!-- Botão Menu Mobile -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <a href="#inscricao" class="btn-cta">Inscreva-se</a>
+    </nav>
+  </header>
+
+  <!-- Seção Sobre Nós -->
+  <section id="sobre" class="sobre-nos">
+    <div class="imagem">
+      <img src="https://via.placeholder.com/400x250" alt="Imagem Sobre Nós">
+    </div>
+    <div class="texto">
+      <h2>Sobre Nós</h2>
+      <p>
+        Somos uma plataforma dedicada a oferecer cursos online de qualidade.
+        Nosso objetivo é ajudar pessoas a alcançarem seus objetivos profissionais
+        e pessoais através da educação acessível.
+        Oferecemos cursos de HTML, CSS e JS
+      </p>
+    </div>
+  </section>
+
+  <!-- Script para abrir/fechar menu mobile -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
