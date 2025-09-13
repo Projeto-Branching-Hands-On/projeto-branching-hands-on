@@ -1,105 +1,97 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 
-header {
-    width: 100%;
-    background: #1a1a1a;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    transition: background 0.3s ease;
-}
-
-.navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem 2rem;
+.hero {
+    margin-top: 70px; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #1a1a1a, #333);
     color: #fff;
+    flex-wrap: wrap;
 }
 
-.logo span {
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
     color: #ff9800;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    transition: color 0.2s;
-}
-
-.nav-links a:hover {
-    color: #ff9800;
-}
-
-.btn-cta {
+.btn-hero {
     background: #ff9800;
     color: #fff;
-    padding: 0.6rem 1.2rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: background 0.2s;
 }
 
-.btn-cta:hover {
+.btn-hero:hover {
     background: #e68900;
 }
 
-/* Botão menu mobile */
-.menu-toggle {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
+.hero-image img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
 }
 
-/* RESPONSIVO */
+/* Seção Inscrição */
+.inscricao {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.inscricao h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.inscricao form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.inscricao input,
+.inscricao button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inscricao button {
+    background: #ff9800;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.inscricao button:hover {
+    background: #e68900;
+}
+
 @media (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background: #1a1a1a;
-        width: 200px;
-        height: 0;
-        overflow: hidden;
+    .hero {
         flex-direction: column;
-        gap: 1rem;
-        padding: 0;
-        transition: height 0.3s ease;
+        text-align: center;
     }
-
-    .nav-links.open {
-        height: 220px;
-        padding: 1rem;
-    }
-
-    .btn-cta {
-        display: none; 
-    }
-
-    .menu-toggle {
-        display: block;
-        color: #fff;
+    .hero-image {
+        margin-top: 2rem;
     }
 }
