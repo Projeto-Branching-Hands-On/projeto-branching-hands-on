@@ -119,6 +119,48 @@ body {
     border-radius: 10px;
 }
 
+/* Seção de Módulos */
+.cards-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.cursos h2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 2rem;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem auto;
+  border-radius: 50%;
+  background: #ff9800;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .inscricao {
     padding: 3rem 2rem;
     text-align: center;
@@ -307,5 +349,12 @@ body {
 
     .hero-image {
         margin-top: 2rem;
+    }
+
+    .modulos {
+    flex-direction: column;
+    }
+    .card {
+        width: 100%;
     }
 }
