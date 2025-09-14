@@ -27,3 +27,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+const form = document.getElementById("form-inscricao");
+const modal = document.getElementById("modal-sucesso");
+const closeButton = document.querySelector(".close-button");
+
+const fecharModal = () => {
+    modal.classList.add("hidden");
+};
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault(); 
+    modal.classList.remove("hidden"); 
+    form.reset(); 
+});
+
+
+closeButton.addEventListener("click", fecharModal);
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        fecharModal();
+    }
+});
