@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,23 +12,19 @@
   <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1048/1048949.png" type="image/x-icon">
   <link rel="stylesheet" href="src/css/styles.css">
 </head>
-
 <body>
   <!-- Header -->
   <header id="main-header">
     <nav class="navbar">
       <div class="logo">Cursos<span>Online</span></div>
-
       <!-- Botão Menu Mobile -->
       <div class="menu-toggle" id="menu-toggle">☰</div>
-
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Início</a></li>
         <li><a href="#cursos">Cursos</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
-
       <a href="#inscricao" class="btn-cta">Inscreva-se</a>
     </nav>
   </header>
@@ -56,27 +51,63 @@
         <button type="submit">Enviar</button>
       </form>
     </section>
+
+    <!-- Seção de Depoimentos -->
+    <section class="secao-depoimentos">
+      <h2>O que nossos alunos dizem</h2>
+      <div class="depoimentos-grid">
+        <div class="card-depoimento">
+          <img src="src/assets/imagens/aluno1.jpeg" alt="Foto do Aluno 1">
+          <p class="nome-aluno">João da Silva</p>
+          <div class="estrelas">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+          <p class="texto-depoimento">
+            "O curso foi um divisor de águas na minha carreira. A didática dos professores e o suporte da equipe são incríveis!"
+          </p>
+        </div>
+        <div class="card-depoimento">
+          <img src="src/assets/imagens/aluno2.jpeg" alt="Foto da Aluna 2">
+          <p class="nome-aluno">Maria Oliveira</p>
+          <div class="estrelas">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+          <p class="texto-depoimento">
+            "Eu não sabia nada sobre o assunto e saí do curso pronta para o mercado de trabalho. Recomendo de olhos fechados."
+          </p>
+        </div>
+        <div class="card-depoimento">
+          <img src="src/assets/imagens/aluno3.jpeg" alt="Foto do Aluno 3">
+          <p class="nome-aluno">Carlos Souza</p>
+          <div class="estrelas">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+          <p class="texto-depoimento">
+            "O conteúdo é muito prático e focado no que realmente importa. Valeu cada centavo do investimento."
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Rodapé -->
-<footer class="rodape">
+  <footer class="rodape">
     <p>&copy; 2025 Cursos Online - Todos os direitos reservados.</p>
     <div class="social">
-        <a href="#">Facebook</a> |
-        <a href="#">Instagram</a> |
-        <a href="#">LinkedIn</a>
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">LinkedIn</a>
     </div>
-</footer>
+  </footer>
 
-<div id="modal-sucesso" class="modal-overlay hidden">
+  <div id="modal-sucesso" class="modal-overlay hidden">
     <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <h2>✅ Inscrição Realizada!</h2>
-        <p>Agradecemos por se inscrever. Fique atento ao seu email para receber novidades.</p>
+      <span class="close-button">&times;</span>
+      <h2>✅ Inscrição Realizada!</h2>
+      <p>Agradecemos por se inscrever. Fique atento ao seu email para receber novidades.</p>
     </div>
-</div>
+  </div>
 
   <script src="src/js/index.js"></script>
 </body>
-
 </html>
