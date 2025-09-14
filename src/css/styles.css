@@ -86,6 +86,40 @@
     background: #e68900;
 }
 
+/* Seção de Módulos */
+.modulos {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #fff;
+}
+
+.modulos h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 250px;
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
