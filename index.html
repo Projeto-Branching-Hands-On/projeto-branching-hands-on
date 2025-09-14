@@ -50,13 +50,31 @@
     <!-- Seção de Inscrição -->
     <section id="inscricao" class="inscricao">
       <h2>Inscreva-se Agora</h2>
-      <form>
+      <form id="form-inscricao">
         <input type="text" placeholder="Nome completo" required>
         <input type="email" placeholder="Seu e-mail" required>
         <button type="submit">Enviar</button>
       </form>
     </section>
   </main>
+
+  <!-- Rodapé -->
+<footer class="rodape">
+    <p>&copy; 2025 Cursos Online - Todos os direitos reservados.</p>
+    <div class="social">
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">LinkedIn</a>
+    </div>
+</footer>
+
+<div id="modal-sucesso" class="modal-overlay hidden">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>✅ Inscrição Realizada!</h2>
+        <p>Agradecemos por se inscrever. Fique atento ao seu email para receber novidades.</p>
+    </div>
+</div>
 
   <script src="src/js/index.js"></script>
 </body>
