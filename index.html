@@ -7,17 +7,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1048/1048949.png" type="image/x-icon">
   <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
+
   <!-- Header -->
   <header id="main-header">
     <nav class="navbar">
       <div class="logo">Cursos<span>Online</span></div>
-      <!-- Botão Menu Mobile -->
       <div class="menu-toggle" id="menu-toggle">☰</div>
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Início</a></li>
@@ -29,6 +29,7 @@
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main>
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -42,7 +43,7 @@
       </div>
     </section>
 
-    <!-- Seção de Inscrição -->
+    <!-- Inscrição -->
     <section id="inscricao" class="inscricao">
       <h2>Inscreva-se Agora</h2>
       <form id="form-inscricao">
@@ -52,39 +53,27 @@
       </form>
     </section>
 
-    <!-- Seção de Depoimentos -->
+    <!-- Depoimentos -->
     <section class="secao-depoimentos">
       <h2>O que nossos alunos dizem</h2>
       <div class="depoimentos-grid">
         <div class="card-depoimento">
           <img src="src/assets/imagens/aluno1.jpeg" alt="Foto do Aluno 1">
           <p class="nome-aluno">João da Silva</p>
-          <div class="estrelas">
-            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-          </div>
-          <p class="texto-depoimento">
-            "O curso foi um divisor de águas na minha carreira. A didática dos professores e o suporte da equipe são incríveis!"
-          </p>
+          <div class="estrelas">⭐⭐⭐⭐⭐</div>
+          <p class="texto-depoimento">"O curso foi um divisor de águas na minha carreira. A didática dos professores e o suporte da equipe são incríveis!"</p>
         </div>
         <div class="card-depoimento">
           <img src="src/assets/imagens/aluno2.jpeg" alt="Foto da Aluna 2">
           <p class="nome-aluno">Maria Oliveira</p>
-          <div class="estrelas">
-            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-          </div>
-          <p class="texto-depoimento">
-            "Eu não sabia nada sobre o assunto e saí do curso pronta para o mercado de trabalho. Recomendo de olhos fechados."
-          </p>
+          <div class="estrelas">⭐⭐⭐⭐⭐</div>
+          <p class="texto-depoimento">"Eu não sabia nada sobre o assunto e saí do curso pronta para o mercado de trabalho. Recomendo de olhos fechados."</p>
         </div>
         <div class="card-depoimento">
           <img src="src/assets/imagens/aluno3.jpeg" alt="Foto do Aluno 3">
           <p class="nome-aluno">Carlos Souza</p>
-          <div class="estrelas">
-            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-          </div>
-          <p class="texto-depoimento">
-            "O conteúdo é muito prático e focado no que realmente importa. Valeu cada centavo do investimento."
-          </p>
+          <div class="estrelas">⭐⭐⭐⭐⭐</div>
+          <p class="texto-depoimento">"O conteúdo é muito prático e focado no que realmente importa. Valeu cada centavo do investimento."</p>
         </div>
       </div>
     </section>
@@ -100,7 +89,8 @@
     </div>
   </footer>
 
-  <div id="modal-sucesso" class="modal-overlay hidden">
+  <!-- Modal -->
+  <div id="modal-sucesso" class="modal-overlay">
     <div class="modal-content">
       <span class="close-button">&times;</span>
       <h2>✅ Inscrição Realizada!</h2>

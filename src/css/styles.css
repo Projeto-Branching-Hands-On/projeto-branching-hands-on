@@ -1,4 +1,4 @@
-/* ===== RESET ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,23 +7,20 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
 }
 
-/* ===== NAVBAR ===== */
 .navbar {
-    background: #1a1a1a;
-    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+    top: 0;
+    background: #1a1a1a;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -60,8 +57,8 @@ body {
     color: #fff;
     padding: 0.6rem 1rem;
     border-radius: 5px;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
     transition: background 0.3s;
 }
 
@@ -69,16 +66,14 @@ body {
     background: #e68900;
 }
 
-/* Botão Menu Mobile */
 .menu-toggle {
     display: none;
     font-size: 2rem;
     cursor: pointer;
 }
 
-/* ===== HERO ===== */
 .hero {
-    margin-top: 70px; 
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,8 +104,8 @@ body {
     color: #fff;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
     transition: background 0.2s;
 }
 
@@ -124,7 +119,6 @@ body {
     border-radius: 10px;
 }
 
-/* ===== SEÇÃO INSCRIÇÃO ===== */
 .inscricao {
     padding: 3rem 2rem;
     text-align: center;
@@ -148,8 +142,8 @@ body {
 .inscricao button {
     padding: 0.8rem;
     font-size: 1rem;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 .inscricao button {
@@ -164,12 +158,10 @@ body {
     background: #e68900;
 }
 
-/* ===== DEPOIMENTOS ===== */
 .secao-depoimentos {
-    width: 100%;
     max-width: 1200px;
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
     padding: 3rem 2rem;
 }
 
@@ -181,13 +173,13 @@ body {
 .depoimentos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px; 
+    gap: 20px;
 }
 
 .card-depoimento {
-    background-color: #fff;
-    border-radius: 10px;
+    background: #fff;
     padding: 25px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -197,31 +189,30 @@ body {
 .card-depoimento img {
     width: 100px;
     height: 100px;
-    border-radius: 50%; 
-    object-fit: cover; 
+    border-radius: 50%;
+    object-fit: cover;
     margin-bottom: 15px;
 }
 
 .nome-aluno {
-    font-size: 1.2rem;
     font-weight: bold;
-    margin: 0;
+    font-size: 1.2rem;
 }
 
 .estrelas {
-    color: #f8d64e; 
-    margin: 10px 0;
+    color: #f8d64e;
     font-size: 1.3rem;
+    margin: 10px 0;
 }
 
 .texto-depoimento {
+    font-style: italic;
     font-size: 1rem;
     line-height: 1.5;
     color: #555;
-    font-style: italic;
 }
 
-/* ===== RODAPÉ ===== */
+
 .rodape {
     background: #1a1a1a;
     color: #fff;
@@ -240,44 +231,33 @@ body {
     text-decoration: underline;
 }
 
-/* ===== MODAL SUCESSO ===== */
-#mensagem-sucesso {
-    margin-top: 1rem;
-    font-weight: bold;
-    color: green;
-}
-
-.hidden {
-    display: none;
-}
 
 .modal-overlay {
-    position: fixed; 
+    display: none;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
-    display: flex; 
     justify-content: center;
     align-items: center;
+    background: rgba(0, 0, 0, 0.6);
     z-index: 2000;
 }
 
-.modal-content {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    text-align: center;
-    max-width: 400px;
-    width: 90%;
-    position: relative; 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+.modal-overlay.active {
+    display: flex;
 }
 
-.modal-content h2 {
-    margin-bottom: 1rem;
-    color: #333;
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .close-button {
@@ -294,8 +274,8 @@ body {
     color: #333;
 }
 
-/* ===== RESPONSIVIDADE ===== */
-@media (max-width: 768px) {
+
+@media(max-width:768px) {
     .menu-toggle {
         display: block;
     }
